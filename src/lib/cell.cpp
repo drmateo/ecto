@@ -257,6 +257,8 @@ case ecto::NAME: {static std::string x = BOOST_PP_STRINGIZE(ecto::NAME); return 
         return ecto::QUIT;
       }
     } CATCH_ALL()
+
+    return ecto::UNKNOWN;
   }
 
   ReturnCode
